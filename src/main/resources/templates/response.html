@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>WhiteTest Status</title>
+<style type="text/css">
+	span {
+        display: inline-block;
+        width: 400px;
+        text-align: left;
+    }
+</style>
+</head>
+<body>
+<div align="center" >
+	<div th:if="${#lists.isEmpty(response.criteriaMismatch)}">
+		<h2> Check Results</h2>
+		<h4>Student:</h4><br/>
+		<span>Student id:</span><span th:text="${response.student.id}"></span><br/>
+		<span>Student Name:</span><span th:text="${response.student.name}"></span><br/>
+		<h4>Address:</h4><br/>
+		<span>Street:</span><span th:text="${response.student.address.street}"></span><br/>
+		<span>City:</span><span th:text="${response.student.address.city}"></span><br/>
+		<span>Poste Code:</span><span th:text="${response.student.address.posteCode}"></span><br/>
+		<h4>Exam:</h4><br/>
+		<span>Code:</span><span th:text="${response.exam.code}"></span><br/>
+		<span>Name:</span><span th:text="${response.exam.name}"></span><br/>
+		<span>Date:</span><span th:text="${response.date}"></span><br/>
+		<span>Is Valid:</span><span th:text="${response.isValid}"></span><br/>
+	</div>
+		<div th:if="${not #lists.isEmpty(response.criteriaMismatch)}">
+			<h4> Reasons why is not accepted</h4>
+			<div th:each="reason, state : ${response.criteriaMismatch}">
+			<span th:text="'Reason '+${state.index+1}+' :'"></span><span th:text="${reason}"></span><br/>
+			</div>
+		</div>
+</div>
+</body>
+</html>

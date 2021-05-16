@@ -27,7 +27,7 @@ public class CheckController {
 	public String CheckResults(@ModelAttribute("request") StudentRequest request ,Model model) {
 		WhiteTestResponse response = student.getWhiteTestStatus(request);
 		model.addAttribute("response", response);
-		return "results";
+		return "response";
 	}
 
 }
