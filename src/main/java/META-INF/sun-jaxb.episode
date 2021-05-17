@@ -1,47 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
-      
-    <!--
+  <!--
 
 Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.3.0 
 Voir <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-Généré le : 2021.05.16 à 03:40:16 PM CET 
+Généré le : 2021.05.17 à 01:05:10 AM WAT 
 
   -->
-      
-    <bindings xmlns:tns="http://www.tekup.de/soap/models/whitetest" if-exists="true" scd="x-schema::tns">
-            
-        <schemaBindings map="false">
-                  
-            <package name="com.example.demo.whitetest"/>
-                
-        </schemaBindings>
-            
-        <bindings if-exists="true" scd="tns:StudentRequest">
-                  
-            <class ref="com.example.demo.whitetest.StudentRequest"/>
-                
-        </bindings>
-            
-        <bindings if-exists="true" scd="tns:WhiteTestResponse">
-                  
-            <class ref="com.example.demo.whitetest.WhiteTestResponse"/>
-                
-        </bindings>
-            
-        <bindings if-exists="true" scd="~tns:Student">
-                  
-            <class ref="com.example.demo.whitetest.Student"/>
-                
-        </bindings>
-            
-        <bindings if-exists="true" scd="~tns:Exam">
-                  
-            <class ref="com.example.demo.whitetest.Exam"/>
-                
-        </bindings>
-          
+  <bindings xmlns:tns="http://www.tekup.de/soap/models/whitetest" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="com.example.demo.whitetest"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="tns:StudentRequest">
+      <class ref="com.example.demo.whitetest.StudentRequest"/>
     </bindings>
-    
+    <bindings if-exists="true" scd="tns:WhiteTestResponse">
+      <class ref="com.example.demo.whitetest.WhiteTestResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:Student">
+      <class ref="com.example.demo.whitetest.Student"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:Exam">
+      <class ref="com.example.demo.whitetest.Exam"/>
+    </bindings>
+    <bindings if-exists="true" scd="~tns:Address">
+      <class ref="com.example.demo.whitetest.Address"/>
+    </bindings>
+  </bindings>
 </bindings>

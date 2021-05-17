@@ -31,9 +31,9 @@
 	<h2>Check White Test Form</h2>
 	<form action="#" th:action="@{/check/whitetest}" method="post" th:object="${request}">
 		<label> Student Id :</label>
-		<input type="number" th:field="*{studentId}" /> <br/>
+		<input type="number" th:field="*{studentId}" required="required" /> <br/>
 		<label> Exam Code :</label>
-		<input type="text" th:field="*{examCode}" /> <br/>
+		<input type="text" th:field="*{examCode}" required="required"/> <br/>
 
 		<button type="submit"> Check </button>
 	</form>

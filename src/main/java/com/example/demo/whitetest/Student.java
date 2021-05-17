@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.3.0 
 // Voir <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2021.05.16 à 03:40:17 PM CET 
+// Généré le : 2021.05.17 à 01:05:10 AM WAT 
 //
 
 
@@ -26,7 +26,7 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;sequence&gt;
  *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="address" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="address" type="{http://www.tekup.de/soap/models/whitetest}Address"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -47,7 +47,7 @@ public class Student {
     @XmlElement(required = true)
     protected String name;
     @XmlElement(required = true)
-    protected String address;
+    protected Address address;
 
     /**
      * Obtient la valeur de la propriété id.
@@ -94,10 +94,10 @@ public class Student {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link Address }
      *     
      */
-    public String getAddress() {
+    public Address getAddress() {
         return address;
     }
 
@@ -106,10 +106,10 @@ public class Student {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link Address }
      *     
      */
-    public void setAddress(String value) {
+    public void setAddress(Address value) {
         this.address = value;
     }
 

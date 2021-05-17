@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.3.0 
 // Voir <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2021.05.16 à 03:40:17 PM CET 
+// Généré le : 2021.05.17 à 01:05:10 AM WAT 
 //
 
 
@@ -66,6 +66,14 @@ public class ObjectFactory {
      */
     public Exam createExam() {
         return new Exam();
+    }
+
+    /**
+     * Create an instance of {@link Address }
+     * 
+     */
+    public Address createAddress() {
+        return new Address();
     }
 
 }
